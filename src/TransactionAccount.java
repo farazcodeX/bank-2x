@@ -13,12 +13,16 @@ public class TransactionAccount extends BankAcount {
         System.out.println("Account : Intrest : 0.00");
         
     }
+    @Override
     public void withDraw(double amount) {
 
+        System.out.println("---------------------------");
+        System.out.println("Transaction Account");
+        System.out.println(getAccontNumber() + "        " + getOwnerName());
         if(amount > 0) {
             if(amount <= balance + overDraftLimit) {
                 balance -= amount;
-                System.out.println("withdraw  :  " + "+" + amount);
+                System.out.println("withdraw  :  " + "-" + amount);
                 System.out.println("new balance  :  " + balance);
             }
             else 
@@ -26,6 +30,8 @@ public class TransactionAccount extends BankAcount {
         }
         else 
         System.out.println("inputed amount is not valid");
+
+        System.out.println("---------------------------");
 
     }
     

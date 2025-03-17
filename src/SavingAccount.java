@@ -12,7 +12,7 @@ public class SavingAccount extends BankAcount{
    public void calculateInterest() {
 
     super.deposit(balance*interestRate);
-    System.out.println("deposit  :  " + "+" +balance*interestRate);
+   // System.out.println("intrest  :   " + "+" +balance*interestRate);
 
    }
     

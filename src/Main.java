@@ -17,12 +17,43 @@ public class Main {
         bank.addAccount(transactionAccount1);
         bank.addAccount(transactionAccount2);
         bank.addAccount(TransactionAccount3);
+       
+        // existed account
+        bank.findAccount("1927");
+        // doesnt exist
+        bank.findAccount("0000");
 
-        
+       savingAccount1.deposit(30.18);
+      // System.out.println(savingAccount1.balance);
+       savingAccount1.calculateInterest();
+       //System.out.println(savingAccount1.balance);
 
+       transactionAccount1.withDraw(12);
+       transactionAccount1.withDraw(900);
 
+       //other payments
+       savingAccount2.deposit(100);
+       savingAccount2.calculateInterest();
+       savingAccount2.withDraw(20);
 
+       transactionAccount2.deposit(20);
+       transactionAccount2.withDraw(999);
+       transactionAccount2.withDraw(-9);
+       transactionAccount2.withDraw(88);
+       transactionAccount2.deposit(10000);
 
+       savingAccount3.deposit(100);
+       savingAccount3.calculateInterest();
+       savingAccount3.withDraw(99);
+       savingAccount3.withDraw(-9999);
+       savingAccount3.withDraw(9);
+
+       TransactionAccount3.withDraw(4374);
+       TransactionAccount3.deposit(845.434334);
+       TransactionAccount3.withDraw(-9999);
+       TransactionAccount3.deposit(-9);
+
+        bank.showAllBalance();
     }
     
 }
