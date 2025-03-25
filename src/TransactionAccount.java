@@ -3,8 +3,8 @@ public class TransactionAccount extends BankAcount {
     private final double overDraftLimit = 500;
 
 
-    public TransactionAccount(String acNum, String owName, double balance) {
-        super(acNum, owName, balance);
+    public TransactionAccount(String aountNumber, String ownerName, double balance) {
+        super(aountNumber, ownerName, balance);
     }
 
     @Override

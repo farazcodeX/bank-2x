@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 
 public class BankCustomers {
+
+    
     private ArrayList<BankAcount> accountsList = new ArrayList<>();
 
     public void addAccount(BankAcount acount) {

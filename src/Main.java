@@ -41,6 +41,7 @@ public class Main {
        transactionAccount2.withDraw(-9);
        transactionAccount2.withDraw(88);
        transactionAccount2.deposit(10000);
+       transactionAccount2.calculateInterest();
 
        savingAccount3.deposit(100);
        savingAccount3.calculateInterest();
@@ -52,6 +53,7 @@ public class Main {
        TransactionAccount3.deposit(845.434334);
        TransactionAccount3.withDraw(-9999);
        TransactionAccount3.deposit(-9);
+       TransactionAccount3.calculateInterest();
 
         bank.showAllBalance();
     }

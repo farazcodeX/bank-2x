@@ -4,15 +4,20 @@ public abstract class BankAcount {
    private String ownerName;
    protected double balance;
 
-   public BankAcount(String acNum, String ownerName, double balance) {
-       
-      this.accountNumber = acNum;
+   public BankAcount(String accountNumber, String ownerName, double balance) {
+
+      // i wnat to add a wrong input exception class but i think no need for this because this program is too basic 
+
+      
+
+      this.accountNumber = accountNumber;
       this.ownerName = ownerName;
       this.balance = balance;
 
    }
 
    public abstract void calculateInterest();
+
    public void deposit(double amount) {
 
       System.out.println("-------------------------");
